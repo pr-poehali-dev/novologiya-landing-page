@@ -10,34 +10,19 @@ const Index = () => {
 
   const services = [
     {
+      icon: "Globe",
+      title: "Веб-сайты",
+      description: "Разрабатываем сайты для бизнеса — от лендингов до интернет-магазинов"
+    },
+    {
       icon: "Code2",
-      title: "Веб-разработка",
-      description: "Создаем современные веб-приложения с использованием передовых технологий и фреймворков"
+      title: "Веб-приложения",
+      description: "Создаем удобные веб-приложения под ваши задачи"
     },
     {
-      icon: "Smartphone",
-      title: "Мобильные приложения",
-      description: "Разрабатываем кроссплатформенные мобильные решения для iOS и Android"
-    },
-    {
-      icon: "Database",
-      title: "Системы управления",
-      description: "Проектируем и внедряем корпоративные системы и CRM для автоматизации бизнеса"
-    },
-    {
-      icon: "Cloud",
-      title: "Облачные решения",
-      description: "Миграция в облако и разработка облачных сервисов на базе ведущих платформ"
-    },
-    {
-      icon: "Shield",
-      title: "Информационная безопасность",
-      description: "Обеспечиваем защиту данных и соответствие требованиям безопасности"
-    },
-    {
-      icon: "Headphones",
-      title: "Техподдержка",
-      description: "Круглосуточная поддержка и сопровождение разработанных решений"
+      icon: "Wrench",
+      title: "Поддержка и доработки",
+      description: "Помогаем с доработкой существующих проектов и их поддержкой"
     }
   ];
 
@@ -90,15 +75,16 @@ const Index = () => {
         <div className="container mx-auto relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="text-5xl md:text-6xl font-heading font-bold mb-6 leading-tight">
-                Инновационные{" "}
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 leading-tight">
+                Разрабатываем{" "}
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  IT-решения
-                </span>
+                  веб-решения
+                </span>{" "}
+                для вашего бизнеса
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Разрабатываем программное обеспечение с упором на веб-технологии. 
-                Превращаем идеи в цифровые решения, которые работают.
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Небольшая команда разработчиков, которая фокусируется на качественных веб-проектах. 
+                Работаем над каждым проектом с вниманием к деталям.
               </p>
               <div className="flex gap-4">
                 <Button 
@@ -141,50 +127,30 @@ const Index = () => {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-heading font-bold mb-6">
-                О компании{" "}
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Новология
-                </span>
+              <h2 className="text-3xl font-heading font-bold mb-6">
+                Кто мы?
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Мы — команда профессионалов, специализирующихся на разработке 
-                современного программного обеспечения. Наш главный фокус — 
-                веб-технологии и инновационные цифровые решения.
+                Мы — небольшая команда разработчиков из России, которая специализируется 
+                на веб-разработке. Работаем с 2020 года и успели реализовать проекты 
+                для бизнеса разного масштаба.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center flex-shrink-0">
-                    <Icon name="Rocket" className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-lg mb-2">Инновационный подход</h3>
-                    <p className="text-muted-foreground">
-                      Используем передовые технологии и методологии разработки
-                    </p>
-                  </div>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Наш подход простой: разбираемся в ваших задачах, предлагаем решение 
+                и делаем качественно. Без лишних обещаний — только реальный результат.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-accent" size={20} />
+                  <p className="text-foreground">Прямое общение с разработчиками</p>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center flex-shrink-0">
-                    <Icon name="Users" className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-lg mb-2">Клиентоориентированность</h3>
-                    <p className="text-muted-foreground">
-                      Глубоко погружаемся в бизнес-задачи каждого клиента
-                    </p>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-accent" size={20} />
+                  <p className="text-foreground">Гибкий подход к каждому проекту</p>
                 </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-accent to-primary flex items-center justify-center flex-shrink-0">
-                    <Icon name="Award" className="text-white" size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-lg mb-2">Качество и надежность</h3>
-                    <p className="text-muted-foreground">
-                      Гарантируем высокое качество кода и стабильность решений
-                    </p>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <Icon name="Check" className="text-accent" size={20} />
+                  <p className="text-foreground">Понятные сроки и цены</p>
                 </div>
               </div>
             </div>
@@ -194,19 +160,16 @@ const Index = () => {
 
       <section id="services" className="py-20 px-4">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-              Наши{" "}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                услуги
-              </span>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Чем можем помочь
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Полный спектр услуг по разработке программного обеспечения для вашего бизнеса
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Специализируемся на веб-разработке и помогаем бизнесу решать задачи в интернете
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {services.map((service, index) => (
               <Card 
                 key={index} 
@@ -233,14 +196,11 @@ const Index = () => {
       <section id="contacts" className="py-20 px-4 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
-              Свяжитесь{" "}
-              <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                с нами
-              </span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
+              Свяжитесь с нами
             </h2>
-            <p className="text-xl text-muted-foreground">
-              Готовы обсудить ваш проект? Мы всегда на связи!
+            <p className="text-lg text-muted-foreground">
+              Обсудим ваш проект и расскажем, как можем помочь
             </p>
           </div>
 
@@ -286,30 +246,19 @@ const Index = () => {
                 </div>
 
                 <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl p-6 flex flex-col justify-center">
-                  <h3 className="font-heading font-semibold text-xl mb-4">Время работы</h3>
+                  <h3 className="font-heading font-semibold text-lg mb-4">График работы</h3>
                   <div className="space-y-2 text-muted-foreground">
                     <p className="flex justify-between">
                       <span>Пн - Пт:</span>
-                      <span className="font-medium text-foreground">9:00 - 18:00</span>
+                      <span className="font-medium text-foreground">10:00 - 19:00 МСК</span>
                     </p>
                     <p className="flex justify-between">
                       <span>Сб - Вс:</span>
-                      <span className="font-medium text-foreground">Выходной</span>
+                      <span className="font-medium text-foreground">По договоренности</span>
                     </p>
                   </div>
                   <div className="mt-6 pt-6 border-t">
-                    <p className="text-sm text-muted-foreground mb-3">Следите за нами в соцсетях:</p>
-                    <div className="flex gap-3">
-                      <button className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center hover:scale-110 transition-transform">
-                        <Icon name="Github" className="text-white" size={20} />
-                      </button>
-                      <button className="w-10 h-10 rounded-lg bg-gradient-to-br from-secondary to-accent flex items-center justify-center hover:scale-110 transition-transform">
-                        <Icon name="Linkedin" className="text-white" size={20} />
-                      </button>
-                      <button className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent to-primary flex items-center justify-center hover:scale-110 transition-transform">
-                        <Icon name="Twitter" className="text-white" size={20} />
-                      </button>
-                    </div>
+                    <p className="text-sm text-muted-foreground mb-2">Обычно отвечаем в течение часа</p>
                   </div>
                 </div>
               </div>
